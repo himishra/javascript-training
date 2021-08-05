@@ -98,6 +98,17 @@
         console.log("Days left: "+christmas());
 
         // Assignment-6
+        function leapYear(){
+            let year = 2015;
+            if((year%4==0) && (year%100!=0) || (year%400 == 0))
+            {
+                return "leap year";
+            }
+            else{
+                return "not leap year";
+            }
+        }
+        console.log(leapYear())
     </script>
 </body>
 
