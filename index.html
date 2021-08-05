@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Assignment-1
+        function simpleInterest() {
+            let principle = 1000;
+            let interest = 10;
+            let time = 2;
+            return (principle * interest * time) / 100;
+        }
+        console.log(simpleInterest());
+
+        // Assignment-2
+        function declareStudent() {
+            student = {
+                firstName: "Tata",
+                lastName: "Harrier",
+                class: "crossover"
+            }
+            return student["firstName"] + " " + student["lastName"];
+        }
+        console.log("Full Name: " + declareStudent());
+
+        // Assignment-3
+        function monthName() {
+            let date = new Date();
+            switch (date.getMonth()) {
+                case 0:
+                    return "January";
+                    break;
+                case 1:
+                    return "February";
+                    break;
+                case 2:
+                    return "March";
+                    break;
+                case 3:
+                    return "April";
+                    break;
+                case 4:
+                    return "May";
+                    break;
+                case 5:
+                    return "June";
+                    break;
+                case 6:
+                    return "July";
+                    break;
+                case 7:
+                    return "August";
+                    break;
+                case 8:
+                    return "September";
+                    break;
+                case 9:
+                    return "October";
+                    break;
+                case 10:
+                    return "November";
+                    break;
+                case 11:
+                    return "December";
+                    break;
+            }
+        }
+        console.log(monthName());
+
+        // Assignment-4
+        function compoundInterest(){
+            let principle = 1000;
+            let interest = 8;
+            let time = 5;
+            let n = 12;
+            
+            return principle*(Math.pow((1+(interest/n)), (time*n))) - principle;
+        }
+        console.log(compoundInterest());
+
+        // Assignment-5
+        
+    </script>
+</body>
+
+</html>
