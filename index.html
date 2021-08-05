@@ -76,17 +76,28 @@
 
         // Assignment-4
         function compoundInterest(){
-            let principle = 1000;
-            let interest = 8;
+            let principle = 2000;
+            let interest = 0.08;
             let time = 5;
             let n = 12;
             
-            return principle*(Math.pow((1+(interest/n)), (time*n))) - principle;
+            return principle*(Math.pow((1+(interest/n)), (time*n)))-principle;
         }
         console.log(compoundInterest());
 
         // Assignment-5
-        
+        function christmas(){
+            let date = new Date();
+            let year = date.getFullYear();
+            let xmas = new Date(year, 11, 25);
+            console.log(xmas);
+
+            let day_1 = 1000*60*60*24;
+            return Math.ceil((xmas.getTime()-date.getTime())/day_1);
+        }
+        console.log("Days left: "+christmas());
+
+        // Assignment-6
     </script>
 </body>
 
